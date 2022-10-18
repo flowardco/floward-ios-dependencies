@@ -1,7 +1,7 @@
 rm -rf Frameworks *.xcframework App.* Derived Tuist/Dependencies ~/.tuist/Cache
 
 tuist fetch
-tuist cache warm --xcframeworks --dependencies-only --profile Release
+tuist cache warm --xcframeworks
 
 cp -rf ~/.tuist/Cache/BuildCache/*/*.xcframework ./
 cp -rf Tuist/Dependencies/Carthage/Build/*.xcframework ./
@@ -32,7 +32,7 @@ for zipfile in Frameworks/*.zip; do
 
     echo '.binaryTarget(' >> Targets.swift
     echo 'name: "'$packagename'",' >> Targets.swift
-    echo 'url: "https://github.com/flowardco/floward-ios-dependencies/releases/download/xcode14.0/'$filename'",' >> Targets.swift
+    echo 'url: "https://github.com/flowardco/floward-ios-dependencies/releases/download/xcode14.0.1/'$filename'",' >> Targets.swift
     echo 'checksum: "'$sha'"' >> Targets.swift
     echo '),' >> Targets.swift
 done

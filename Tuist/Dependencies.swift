@@ -22,6 +22,7 @@ let dependencies = Dependencies(
         .remote(url: "https://github.com/SnapKit/SnapKit", requirement: .exact("5.0.1")),
         .remote(url: "https://github.com/saadaamir/CHIPageControl", requirement: .exact("0.3.1")),
         .remote(url: "https://github.com/SVGKit/SVGKit", requirement: .exact("3.0.0")),
+        .remote(url: "https://github.com/onevcat/Kingfisher", requirement: .exact("7.3.2")),
 
         // App deps
         .remote(url: "https://github.com/airbnb/lottie-ios.git", requirement: .exact("3.4.3")),

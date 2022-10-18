@@ -15,6 +15,7 @@ let project = Project(
                 .external(name: "SnapKit"),
                 .external(name: "CHIPageControl"),
                 .external(name: "SVGKit"),
+                .external(name: "Kingfisher"),
 
                 // App deps
                 .external(name: "Lottie"),

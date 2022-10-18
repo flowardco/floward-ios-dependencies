@@ -4,3 +4,4 @@ Frameworks
 Carthage
 Package.resolved
 SwiftPackageDependencies/.build
+*.zip

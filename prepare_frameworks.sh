@@ -3,14 +3,16 @@ mkdir -p Frameworks
 rm -rf Carthage/Build/SDWebImageMapKit.*
 for xcf in Carthage/Build/*.xcframework; do
     rm -rf $xcf/*/dSYMs
+    cp -rf $xcf .
     filename=$(basename -- "$xcf")
     zipfile="${filename//xcframework/zip}"
-    zip -r "Frameworks/$zipfile" $xcf
+    zip -r "Frameworks/$zipfile" $filename
+    rm -rf $filename
 done
 
 rm -rf SwiftPackageDependencies/*.sha256
 for zipfile in SwiftPackageDependencies/*.zip; do
-    mv $zipfile Frameworks
+    cp $zipfile Frameworks
 done
 
 echo "" > Targets.swift

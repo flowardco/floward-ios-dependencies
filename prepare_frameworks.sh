@@ -8,7 +8,7 @@ for xcf in Carthage/Build/*.xcframework; do
     zip -r "Frameworks/$zipfile" $xcf
 done
 
-rm SwiftPackageDependencies/*.sha256
+rm -rf SwiftPackageDependencies/*.sha256
 for zipfile in SwiftPackageDependencies/*.zip; do
     mv $zipfile Frameworks
 done

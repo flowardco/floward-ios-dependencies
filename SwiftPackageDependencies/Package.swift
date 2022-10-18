@@ -16,7 +16,7 @@ let package = Package(
         .package(url: "https://github.com/flowardco/SkyFloatingLabelTextField", exact: "4.0.0"),
         .package(url: "https://github.com/SnapKit/SnapKit", exact: "5.0.1"),
         .package(url: "https://github.com/saadaamir/CHIPageControl", exact: "0.3.1"),
-        .package(url: "https://github.com/SVGKit/SVGKit", exact: "3.0.0"),
+        .package(url: "https://github.com/sisoje/SVGKit", exact: "3.0.1"),
         .package(url: "https://github.com/onevcat/Kingfisher", exact: "7.3.2"),
 
         // MARK: - App Dependencies

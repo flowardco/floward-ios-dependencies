@@ -1,0 +1,12 @@
+github "SDWebImage/SDWebImage" == 5.13.2
+github "checkout/frames-ios" == 3.5.3
+github "MoathOthman/FSCalendar" "1d0d8156ca388e167a28a55e3d9a777ab0de75db"
+github "mxcl/PromiseKit" == 6.18.1
+github "PromiseKit/UIKit" == 3.1.0
+github "SVProgressHUD/SVProgressHUD" == 2.2.5
+github "hyperoslo/Lightbox" == 2.5.0
+github "Awalz/SwiftyCam" == 4.0.0
+github "52inc/Pulley" "a3281b50fab4b688e2422b2a821e7a9b2e4f8a5c"
+github "philip-bui/web-link-preview" == 1.0.1
+github "dzenbot/DZNEmptyDataSet" == 1.8.1
+github "mac-cain13/R.swift.Library" == 6.1.0

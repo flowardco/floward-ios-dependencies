@@ -1,3 +1,5 @@
 .swiftpm
 Targets.swift
 Frameworks
+Carthage
+Package.resolved

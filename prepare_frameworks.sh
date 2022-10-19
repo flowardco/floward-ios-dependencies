@@ -2,7 +2,6 @@ mkdir -p Frameworks
 
 rm -rf Carthage/Build/SDWebImageMapKit.*
 for xcf in Carthage/Build/*.xcframework; do
-    rm -rf $xcf/*/dSYMs
     cp -rf $xcf .
     filename=$(basename -- "$xcf")
     zipfile="${filename//xcframework/zip}"

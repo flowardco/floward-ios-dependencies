@@ -5,3 +5,4 @@ Carthage
 Package.resolved
 SwiftPackageDependencies/.build
 *.zip
+Cartfile.resolved

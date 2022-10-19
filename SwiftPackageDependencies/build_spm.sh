@@ -1,4 +1,30 @@
-for xxx in $(swift create-xcframework  --list-products | cut -d ':' -f3 | grep -o '\w*' | tail -n +2)
+arr="AlgoliaSearchClient
+    CHIPageControl
+    CTNotificationService
+    Changeset
+    Closures
+    IQKeyboardManagerSwift
+    JTAppleCalendar
+    KeychainSwift
+    Kingfisher
+    Logging
+    Lottie
+    ObjectMapper
+    PanModal
+    PubNub
+    QuickLayout
+    SVGKit
+    Segment
+    SkyFloatingLabelTextField
+    SnapKit
+    Sovran
+    SwiftEntryKit
+    SwiftLinkPreview
+    SwiftyBeaver
+    Toast
+    ViewAnimator"
+#for xxx in $(swift create-xcframework --list-products | awk -F 'Additional available targets:' '{print $1}' | grep -o '\w*')
+for xxx in $(echo $arr | grep -o '\w*')
 do
-    swift create-xcframework --platform ios --no-debug-symbols --configuration release --zip --xc-setting BUILD_LIBRARIES_FOR_DISTRIBUTION=YES --clean --stack-evolution $xxx
+    swift create-xcframework --platform ios --no-debug-symbols --configuration release --zip --clean --stack-evolution $xxx
 done

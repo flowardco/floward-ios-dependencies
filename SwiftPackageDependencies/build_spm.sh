@@ -9,6 +9,7 @@ arr="AlgoliaSearchClient
     Kingfisher
     Logging
     Lottie
+    Mixpanel
     ObjectMapper
     PanModal
     PubNub
@@ -26,5 +27,6 @@ arr="AlgoliaSearchClient
 #for xxx in $(swift create-xcframework --list-products | awk -F 'Additional available targets:' '{print $1}' | grep -o '\w*')
 for xxx in $(echo $arr | grep -o '\w*')
 do
-    swift create-xcframework --platform ios --no-debug-symbols --configuration release --zip --clean --stack-evolution $xxx
+    swift create-xcframework --platform ios --no-debug-symbols --configuration release --zip --clean $xxx
+    # problem with --stack-evolution
 done
